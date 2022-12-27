@@ -1,12 +1,3 @@
-:root {
-    --orange: #ef5252;
-    --yellow: #F7BA3E;
-    --blue: #56B3B4;
-    --green: #03ac13;
-    --background: #1A2B34;
-    --gray: #8657ce;
-    --unit: 10px;
-}
 @keyframes hue {
 
     0% {
@@ -17,111 +8,15 @@
       }
     
 }
-.container {
-    margin-top: 5%;
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: var(--unit);
-    padding: 4%;
-    position: relative;
-    left: 4%;
-    overflow: hidden;
+body,html,nav{
+    background-color: #020202 !important;
+    color: white !important;
 
 }
-
-.row {
-    height: var(--unit);
-    display: flex;
-    justify-content: center;
-    gap: var(--unit);
-    margin-top: 0.5%;
-}
-
-.cell {
-    height: 100%;
-    width: calc(var(--size, 2) * var(--unit));
-    background-color: var(--gray);
-    border-radius: 1000px;
-}
-
-.cell.size-2 {
-    --size: 2;
-}
-
-.cell.size-3 {
-    --size: 3;
-}
-
-.cell.size-4 {
-    --size: 4;
-}
-
-.cell.size-5 {
-    --size: 5;
-}
-
-.cell.size-6 {
-    --size: 6;
-}
-
-.cell.size-7 {
-    --size: 7;
-}
-
-.cell.size-8 {
-    --size: 8;
-}
-
-.cell.size-9 {
-    --size: 9;
-}
-
-.cell.size-10 {
-    --size: 10;
-}
-
-.cell.size-12 {
-    --size: 12;
-}
-
-.cell.size-14 {
-    --size: 14;
-}
-
-.cell.size-16 {
-    --size: 16;
-}
-
-.cell.size-18 {
-    --size: 18;
-}
-
-.cell.size-20 {
-    --size: 20;
-}
-
-.cell.blue {
-    background-color: var(--blue);
-}
-
-.cell.orange {
-    background-color: var(--orange);
-}
-
-.cell.yellow {
-    background-color: var(--yellow);
-}
-
-.cell.green {
-    background-color: var(--green);
-}
-
 
 .frosted {
     width: 90%;
-    height: 80%;
+    height: 80vh;
     margin-left: 5%;
     z-index: 2;
     position: absolute;
@@ -131,181 +26,169 @@
     align-items: center;
     text-align: center;
     /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.34);
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.3px);
-    -webkit-backdrop-filter: blur(7.3px);
-    border: 1px solid rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.4);
     margin-top: -40%;
-    font-family: 'Lobster', cursive;
-    color: black !important;
-}
-.frosted h2{
-    margin-top: -4%;
-
-}
-.frosted p{
-    color: black !important; 
     font-family: 'Cabin', sans-serif;
     font-weight: 600;
-    margin-left:-20%;
+    z-index: 6; 
+    background-image: url('https://i.pinimg.com/564x/d2/c6/41/d2c6410e5041dee3d36748ac1c32f6ea.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: #D0D0D0 !important;
 }
-#work{
-    margin-top: 5%;
-    margin-left: 5%;
-}
+
 
 .animations{
-animation: 250ms ease-out 0.5ms 1 hue;
-}
+    animation: 400ms ease-out 0.5ms 1 hue;
+    }
+    .about{
+        border: 2px solid red;
+        margin-top: 20%;
+        height: 100%;
+        width: 90%;
+    }
+  
+    
+    
+    /*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+    html.has-scroll-smooth {
+        overflow: hidden;
+    }
+   
+    nav {
+        padding-left: 3% !important;
+        border-bottom: transparent;
+    }
+    
+    .navbar-nav{
+        margin-left: 80%;
+    }
+    
+    .navbar-brand {
+        color: #f7f0f0 !important;
+    }
+    
+    .nav-item {
+        color: #e1e0e0 !important;
+    }
+    .nav-item:hover,.navbar-brand:hover{
+        color: gray !important;
+    }
+    
+  
+    
+    .nav-item {
+        float: right !important;
+    }
+    
+    html.has-scroll-dragging {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .has-scroll-smooth body {
+        overflow: hidden;
+    }
+    
+    .has-scroll-smooth [data-scroll-container] {
+        min-height: 100vh;
+    }
+    
+    [data-scroll-direction="horizontal"] [data-scroll-container] {
+        height: 100vh;
+        display: inline-block;
+        white-space: nowrap;
+    }
+    
+    [data-scroll-direction="horizontal"] [data-scroll-section] {
+        display: inline-block;
+        vertical-align: top;
+        white-space: nowrap;
+        height: 100%;
+    }
+    
+    .c-scrollbar {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 11px;
+        height: 100%;
+        transform-origin: center right;
+        transition: transform 0.3s, opacity 0.3s;
+        opacity: 0;
+    }
+    
+    .c-scrollbar:hover {
+        transform: scaleX(1.45);
+    }
+    
+    .c-scrollbar:hover,
+    .has-scroll-scrolling .c-scrollbar,
+    .has-scroll-dragging .c-scrollbar {
+        opacity: 1;
+    }
+    
+    [data-scroll-direction="horizontal"] .c-scrollbar {
+        width: 100%;
+        height: 10px;
+        top: auto;
+        bottom: 0;
+        transform: scaleY(1);
+    }
+    
+    [data-scroll-direction="horizontal"] .c-scrollbar:hover {
+        transform: scaleY(1.3);
+    }
+    
+    .c-scrollbar_thumb {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        opacity: 0.5;
+        width: 7px;
+        border-radius: 10px;
+        margin: 2px;
+        cursor: -webkit-grab;
+        cursor: grab;
+    }
+    
+    .has-scroll-dragging .c-scrollbar_thumb {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+    }
+    
+    [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+        right: auto;
+        bottom: 0;
+    }
+    
+    .fix{
+        
+        margin-top: 2%;
+    }
 
 
+    h2{
+       font-size: 2vw;
+        padding: 2%;
+        border-radius: 16px;
+        width: 80%;
+          line-height: 1.5em;
+        
+    }
 
-.about{
-    border: 2px solid red;
-    margin-top: 20%;
-    height: 100%;
-    width: 90%;
-}
-
-
-/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
-html.has-scroll-smooth {
-    overflow: hidden;
-}
-
-body {
-    background-color: #383356 !important;
-    color: #f7f0f0 !important;
-
-
-}
-
-nav {
-    padding-left: 3% !important;
-}
-
-.navbar-nav{
-    margin-left: 80%;
-}
-
-.navbar-brand {
-    color: #f7f0f0 !important;
-}
-
-.nav-item {
-    color: #e1e0e0 !important;
-}
-.nav-item:hover,.navbar-brand:hover{
-    color: gray !important;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #383356 !important;
-    color: #f7f0f0 !important;
-}
-
-.nav-item {
-    float: right !important;
-}
-
-html.has-scroll-dragging {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.has-scroll-smooth body {
-    overflow: hidden;
-}
-
-.has-scroll-smooth [data-scroll-container] {
-    min-height: 100vh;
-}
-
-[data-scroll-direction="horizontal"] [data-scroll-container] {
-    height: 100vh;
-    display: inline-block;
-    white-space: nowrap;
-}
-
-[data-scroll-direction="horizontal"] [data-scroll-section] {
-    display: inline-block;
-    vertical-align: top;
-    white-space: nowrap;
-    height: 100%;
-}
-
-.c-scrollbar {
+.btn{
+    margin-top: 30%;
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 11px;
-    height: 100%;
-    transform-origin: center right;
-    transition: transform 0.3s, opacity 0.3s;
-    opacity: 0;
 }
 
-.c-scrollbar:hover {
-    transform: scaleX(1.45);
-}
-
-.c-scrollbar:hover,
-.has-scroll-scrolling .c-scrollbar,
-.has-scroll-dragging .c-scrollbar {
-    opacity: 1;
-}
-
-[data-scroll-direction="horizontal"] .c-scrollbar {
-    width: 100%;
-    height: 10px;
-    top: auto;
-    bottom: 0;
-    transform: scaleY(1);
-}
-
-[data-scroll-direction="horizontal"] .c-scrollbar:hover {
-    transform: scaleY(1.3);
-}
-
-.c-scrollbar_thumb {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: black;
-    opacity: 0.5;
-    width: 7px;
-    border-radius: 10px;
-    margin: 2px;
-    cursor: -webkit-grab;
-    cursor: grab;
-}
-
-.has-scroll-dragging .c-scrollbar_thumb {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
-}
-
-[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
-    right: auto;
-    bottom: 0;
-}
-
-.fix{
-    position: fixed;
-    margin-top: 2%;
-}
-
-
-.navbar-toggle.collapsed .icon:before {
-    content: '\f00d';
-}
-.navbar-collapse.collapsed {
-    height: 100vh;
+#resume{
+    margin-top: 100vh;
 }
