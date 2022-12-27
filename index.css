@@ -24,8 +24,10 @@
     display: flex;
     flex-direction: column;
     gap: var(--unit);
-    padding: 2%;
+    padding: 4%;
     position: relative;
+    left: 4%;
+    overflow: hidden;
 
 }
 
@@ -290,4 +292,7 @@ html.has-scroll-dragging {
     bottom: 0;
 }
 
-/* continue */
+.fix{
+    position: fixed;
+    margin-top: 2%;
+}
