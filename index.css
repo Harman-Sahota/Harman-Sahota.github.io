@@ -160,6 +160,8 @@
 animation: 250ms ease-out 0.5ms 1 hue;
 }
 
+
+
 .about{
     border: 2px solid red;
     margin-top: 20%;
@@ -194,6 +196,9 @@ nav {
 
 .nav-item {
     color: #e1e0e0 !important;
+}
+.nav-item:hover,.navbar-brand:hover{
+    color: gray !important;
 }
 
 
@@ -295,4 +300,12 @@ html.has-scroll-dragging {
 .fix{
     position: fixed;
     margin-top: 2%;
+}
+
+
+.navbar-toggle.collapsed .icon:before {
+    content: '\f00d';
+}
+.navbar-collapse.collapsed {
+    height: 100vh;
 }
