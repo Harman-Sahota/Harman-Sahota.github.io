@@ -13,26 +13,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="base.css">
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
  <title> Harman Sahota </title>
 </head>
 
 <body>
 
-  <script src="locomotive-scroll.min.js"></script>
-<script>
-    (function () {
-        var scroll = new LocomotiveScroll();
-    })();
-</script>
+
 
 
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand animations" href="index.html">Harman Sahota</a>
+    <a class="navbar-brand animations" href="index.html"><b>Harman Sahota</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <i class="icon fa fa-bars" style="margin-right: 4%;color: white;border-color: whitesmoke;"></i>
@@ -47,24 +43,26 @@
     </div>
   </nav>
  
-
+ 
   <div class="frosted container-fluid fix" data-scroll-container data-scroll-direction="horizontal">
 
-   <h2 class="animations">As a full stack creative web developer, I have the skills and expertise to bring your vision to life. With a focus on crafting elegant and efficient code, I can turn your ideas into a stunning reality, one line of code at a time </h2>
-  <button type="button" class="btn btn-light">Lets Talk!</button>
+   <h2 class="animations" data-scroll data-scroll-speed="2">As a full stack creative web developer, I have the skills and expertise to bring your vision to life. With a focus on crafting elegant and efficient code, I can turn your ideas into a stunning reality, one line of code at a time </h2>
+  <button type="button" class="btn btn-dark">Lets Talk!</button>
 
 
   </div>
- 
 
 
-<div id="resume">
-  <div class="card" style="width: 18rem;">
+
+<div id="resume" data-scroll-container>
+  <div class="card fade" style="width: 18rem;" >
     <img class="card-img-top" src="..." alt="Card image cap">
     <div class="card-body">
-      <p class="card-text" style="color: wheat;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text" data-scroll data-scroll-speed="2">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
+
+
 
   <!-- <h3 style="margin-top:20%">,I am a <br> Full Stack Creative Developer</h3> -->
   

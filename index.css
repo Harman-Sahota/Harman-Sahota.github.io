@@ -9,14 +9,14 @@
     
 }
 body,html,nav{
-    background-color: #020202 !important;
-    color: white !important;
+    background-color: rgb(251, 251, 251) !important;
+  color: black !important;
 
 }
 
 .frosted {
-    width: 90%;
-    height: 80vh;
+    width: 92%;
+    height: 85vh;
     margin-left: 5%;
     z-index: 2;
     position: absolute;
@@ -29,21 +29,22 @@ body,html,nav{
     background: rgba(255, 255, 255, 0.1);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     margin-top: -40%;
     font-family: 'Cabin', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     z-index: 6; 
-    background-image: url('https://i.pinimg.com/564x/d2/c6/41/d2c6410e5041dee3d36748ac1c32f6ea.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
-    color: #D0D0D0 !important;
+color: black !important;
 }
 
 
 .animations{
-    animation: 400ms ease-out 0.5ms 1 hue;
+    transition: 1s ease-in-out all;
+    animation: 700ms linear .1s hue;
     }
     .about{
         border: 2px solid red;
@@ -69,14 +70,15 @@ body,html,nav{
     }
     
     .navbar-brand {
-        color: #f7f0f0 !important;
+        color: black !important;
     }
     
     .nav-item {
-        color: #e1e0e0 !important;
+        color: black !important;
     }
     .nav-item:hover,.navbar-brand:hover{
-        color: gray !important;
+       color: #71a3ff !important;
+       transition: 0.1s ease-in-out all;
     }
     
   
@@ -191,4 +193,18 @@ body,html,nav{
 
 #resume{
     margin-top: 100vh;
+    padding: 3%;
+    margin-left: 5%;
 }
+.fade {
+    /* other styles for the card element */
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  .fade.fade-in {
+    opacity: 1;
+  }
+  .fade.fade-out {
+    opacity: 0;
+  }
