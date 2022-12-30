@@ -185,8 +185,8 @@ html.has-scroll-dragging {
 }
 
 
-h2 {
-    font-size: 2vw;
+h3 {
+    font-size: 1.81vw;
     padding: 2%;
     border-radius: 16px;
     width: 80%;
@@ -200,16 +200,17 @@ h2 {
 }
 
 #resume {
-    
+
     margin-top: 10vh;
     padding: 3%;
     margin-left: 5%;
     width: 92%;
     height: 30vh;
-    background-color: rgba( 172, 192, 234, 0.7) ; 
+    background-color: rgba(172, 192, 234, 0.7);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     line-height: 2em;
+
 }
 
 #about {
@@ -217,11 +218,23 @@ h2 {
     padding: 3%;
     margin-left: 5%;
     width: 92%;
-    height: 30vh;
-    background-color:rgba(217, 208, 231) ;
+    height: auto;
+    background-color: rgba(217, 208, 231);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
-    line-height: 2em;
+    overflow: hidden;
+
+}
+
+#about h6 {
+    font-size: 1.2vw;
+    width: 70%;
+    margin-top: 2%;
+    margin-left: 35% !important;
+    
+    width: 60ch;
+    height: 28vmin;
+    line-height: 2.5em;
 }
 
 .fade {
@@ -238,8 +251,23 @@ h2 {
 .fade.fade-out {
     opacity: 0;
 }
- .resume{
+
+.resume {
     display: block;
     margin-top: 3% !important;
     margin: 0 auto;
- }
+}
+
+#image {
+    float: left;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    width: 33vmin;
+    height: 33vmin;
+    background-image: url('assets/harman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    box-shadow: -10px -10px 5px #dba280;
+    position: relative;
+}
