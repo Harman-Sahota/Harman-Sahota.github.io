@@ -231,7 +231,7 @@ h3 {
     width: 70%;
     margin-top: 2%;
     margin-left: 35% !important;
-    
+
     width: 60ch;
     height: 28vmin;
     line-height: 2.5em;
@@ -270,4 +270,57 @@ h3 {
     border-radius: 16px;
     box-shadow: -10px -10px 5px #dba280;
     position: relative;
+}
+
+.container {
+    width: 50%;
+    padding: 30px 30px 50px;
+    float: left;
+    border-radius: 16px;
+
+
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.bar {
+    position: relative;
+
+    border: 2px solid #dba280;
+
+    border-radius: 20px;
+
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #dba280;
+}
+
+.skills:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+#html-bar {
+    width: 95%;
+}
+
+#css-bar {
+    width: 80%;
+}
+
+#js-bar {
+    width: 72%;
+}
+
+#jQuery-bar {
+    width: 58%;
 }
