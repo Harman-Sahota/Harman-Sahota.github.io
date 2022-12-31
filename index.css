@@ -10,6 +10,7 @@
 
 }
 
+
 body,
 html,
 nav {
@@ -267,6 +268,9 @@ h3 {
     background-image: url('assets/harman.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    
+
+   
     border-radius: 16px;
     box-shadow: -10px -10px 5px #dba280;
     position: relative;
@@ -314,13 +318,34 @@ h3 {
 }
 
 #css-bar {
-    width: 80%;
+    width: 93%;
 }
 
 #js-bar {
-    width: 72%;
+    width: 85%;
 }
 
 #jQuery-bar {
-    width: 58%;
+    width: 70%;
+}
+#react-bar {
+    width: 40%;
+}
+#django-bar {
+    width: 80%;
+}
+#sql-bar {
+    width: 95%;
+}
+#php-bar {
+    width: 85%;
+}
+#node-bar {
+    width: 80%;
+}
+#python-bar {
+    width: 80%;
+}
+#java-bar {
+    width: 80%;
 }
