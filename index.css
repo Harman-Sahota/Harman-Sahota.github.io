@@ -195,6 +195,7 @@ h3 {
 
 }
 
+
 .talk {
     margin-top: 30%;
     position: absolute;
@@ -227,11 +228,13 @@ h3 {
     line-height: 2em;
 
 }
-form{
-    border: 1px solid rgba(0,0,0,0.03);
+
+form {
+    border: 1px solid rgba(0, 0, 0, 0.03);
     padding: 2%;
     border-radius: 16px;
 }
+
 #about {
     margin-top: 100vh;
     padding: 3%;
@@ -286,9 +289,9 @@ form{
     background-image: url('assets/harman.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    
 
-   
+
+
     border-radius: 16px;
     box-shadow: -10px -10px 5px #dba280;
     position: relative;
@@ -348,39 +351,48 @@ form{
 #jQuery-bar {
     width: 70%;
 }
+
 #react-bar {
     width: 40%;
 }
+
 #django-bar {
     width: 80%;
 }
+
 #sql-bar {
     width: 95%;
 }
+
 #php-bar {
     width: 85%;
 }
+
 #node-bar {
     width: 80%;
 }
+
 #python-bar {
     width: 80%;
 }
+
 #java-bar {
     width: 80%;
 }
 
-#sub a{
+#sub a {
     text-decoration: none;
-   
-}
-.submit{
-display: block;
-margin-top: 3% !important;
-margin: 0 auto;
+
 }
 
-footer{
+.submit {
+    display: block;
+    margin-top: 3% !important;
+    margin: 0 auto;
+}
+
+footer {
     border: none !important;
     margin-top: 4% !important;
 }
+
