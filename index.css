@@ -50,7 +50,7 @@ nav {
 
 .animations {
     transition: 1s ease-in-out all;
-    animation: 700ms linear .1s hue;
+    animation: 800ms linear .2s hue;
 }
 
 .about {
@@ -214,6 +214,24 @@ h3 {
 
 }
 
+#contact {
+
+    margin-top: 10vh;
+    padding: 3%;
+    margin-left: 5%;
+    width: 92%;
+    height: auto;
+    background-color: rgb(255, 228, 225);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    line-height: 2em;
+
+}
+form{
+    border: 1px solid rgba(0,0,0,0.03);
+    padding: 2%;
+    border-radius: 16px;
+}
 #about {
     margin-top: 100vh;
     padding: 3%;
@@ -315,6 +333,8 @@ h3 {
 
 #html-bar {
     width: 95%;
+
+
 }
 
 #css-bar {
@@ -348,4 +368,19 @@ h3 {
 }
 #java-bar {
     width: 80%;
+}
+
+#sub a{
+    text-decoration: none;
+   
+}
+.submit{
+display: block;
+margin-top: 3% !important;
+margin: 0 auto;
+}
+
+footer{
+    border: none !important;
+    margin-top: 4% !important;
 }
