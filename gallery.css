@@ -36,7 +36,7 @@ nav {
 }
 
 .navbar-nav {
-    margin-left: 85%;
+    margin-left: 80%;
 }
 
 .navbar-brand {
@@ -183,6 +183,10 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: 16px;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
     /* background: #131313; */
   }
   
