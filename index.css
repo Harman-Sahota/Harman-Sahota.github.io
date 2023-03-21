@@ -19,6 +19,7 @@ nav {
 
 }
 
+
 .frosted {
     width: 92%;
     height: 85vh;
@@ -68,7 +69,7 @@ html.has-scroll-smooth {
 }
 
 nav {
-    padding-left: 3% !important;
+    padding-left: 2% !important;
     border-bottom: transparent;
 }
 
@@ -214,6 +215,33 @@ h3 {
     line-height: 2em;
 
 }
+
+
+#projects {
+
+    margin-top: 10vh;
+    padding: 3%;
+    margin-left: 5%;
+    width: 92%;
+    height: 50vh;
+    background-color: rgba(243, 183, 255, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    line-height: 2em;
+
+}
+
+.img-proj1{
+    transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
+    transition: transform 2s ;
+}
+
+
+.img-proj1:hover{
+    transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
+}
+
+
 
 #contact {
 
